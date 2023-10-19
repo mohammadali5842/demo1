@@ -137,7 +137,7 @@ resource "aws_key_pair" "urotaxi_kp" {
 }
 
 resource "aws_instance" "urotaxiec2" {
-  security_groups             = [aws_security_group.urotaxijavaserversg.id]
+  vpc_security_group_ids             = [aws_security_group.urotaxijavaserversg.id]
   key_name                    = aws_key_pair.urotaxi_kp.key_name
   subnet_id                   = aws_subnet.urotaxi_pubsn1.id
   ami                         = var.ami
