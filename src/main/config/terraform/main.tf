@@ -7,8 +7,8 @@ terraform {
 }
 provider "aws" {
   region  = "ap-south-1"
-  access_key = "AKIA4F3SO4IFSDLCBA6D"
-  secret_key = "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"
+  #access_key = "AKIA4F3SO4IFSDLCBA6D"
+  #secret_key = "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"
   #profile = "dev"
 }
 resource "aws_vpc" "urotaxivpc" {
