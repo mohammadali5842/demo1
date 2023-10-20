@@ -1,30 +1,37 @@
-variable "urotaxi_cidr" {
+variable "urotaxvpc_cidr" {
   type = string
 }
-variable "urotaxi_pubsn1_cidr" {
+
+variable "urotaxvpc_pubsn1" {
   type = string
 }
-variable "urotaxi_prvsn3_cidr" {
+
+variable "urotaxvpc_prvsn3" {
   type = string
 }
-variable "urotaxi_prvsn4_cidr" {
+variable "urotaxvpc_prvsn4" {
   type = string
 }
-variable "urotaxi_db_instance_type" {
+variable "db_instance_type" {
   type = string
 }
-variable "urotaxi_db_username" {
+variable "db_username" {
+  type = string
+
+}
+variable "db_password" {
   type = string
 }
-variable "urotaxi_db_password" {
+variable "db_engine_version" {
   type = string
 }
 variable "ami" {
-  type = string
-}
-variable "instance_shape" {
-  type = string
+    type = string
+  
 }
 variable "urotaxi_public_key" {
+    type = string
+}
+variable "instance_shape" {
   type = string
 }
